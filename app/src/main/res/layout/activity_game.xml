@@ -5,53 +5,990 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".GameActivity" >
+    tools:context=".GameActivity">
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+    <LinearLayout
+        android:id="@+id/FigurasJugador"
         android:layout_width="0dp"
         android:layout_height="85dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/containerfig"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/contentfigures"
-            android:orientation="horizontal" />
-    </HorizontalScrollView>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
+        android:id="@+id/Container"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/tablefigures"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        android:dividerPadding="10dp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/FigurasJugador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TableRow
+            android:id="@+id/RowA"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF">
+
+            <TextView
+                android:id="@+id/A1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/A8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
 
         <TableRow
+            android:id="@+id/RowB"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/B1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/B8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
 
         <TableRow
+            android:id="@+id/RowC"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/C1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/C8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
 
         <TableRow
+            android:id="@+id/RowD"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/D1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/D8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RowE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/E1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/E8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RowF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/F1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/F8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RowG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/G1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/G8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RowH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/H1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+
+            <TextView
+                android:id="@+id/H8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:backgroundTintMode="add"
+                android:bufferType="normal" />
+        </TableRow>
+
     </TableLayout>
 
     <LinearLayout
@@ -59,25 +996,40 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/arrastre"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/mensaje"
+        android:text="@string/robo"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/containerfig"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

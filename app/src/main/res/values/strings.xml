@@ -3,6 +3,7 @@
     <string name="title">Cuatro en raya</string>
     <string name="unjugador">1 Jugador</string>
     <string name="dosjugador">1 Jugador</string>
+    <string name="robo">Robo</string>
     <string name="title_activity_game">GameActivity</string>
     <string name="mensaje">Seleccione una ficha y arrástrela en el area que se marque</string>
     <!-- Strings used for fragments for navigation -->
