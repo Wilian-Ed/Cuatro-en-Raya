@@ -4,6 +4,7 @@
     <string name="unjugador">1 Jugador</string>
     <string name="dosjugador">1 Jugador</string>
     <string name="title_activity_game">GameActivity</string>
+    <string name="mensaje">Seleccione una ficha y arrástrela en el area que se marque</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
