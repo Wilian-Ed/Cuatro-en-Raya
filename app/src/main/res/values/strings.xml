@@ -3,7 +3,14 @@
     <string name="title">Cuatro en raya</string>
     <string name="unjugador">1 Jugador</string>
     <string name="dosjugador">1 Jugador</string>
-    <string name="robo">Robo</string>
+    <string name="robo">Anthom</string>
+    <string name="modounjugador">Modo un jugador</string>
+    <string name="tresfichas">Selecciona tus 3 fichas</string>
+    <string name="fichauno">Ficha 1</string>
+    <string name="fichados">Ficha 2</string>
+    <string name="fichatres">Ficha 3</string>
+    <string name="listo">Listo</string>
+
     <string name="title_activity_game">GameActivity</string>
     <string name="mensaje">Seleccione una ficha y arrástrela en el area que se marque</string>
     <!-- Strings used for fragments for navigation -->
