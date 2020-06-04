@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:text="@string/fichauno"
         android:textColor="@android:color/white"
@@ -69,9 +69,8 @@
         android:layout_marginEnd="75dp"
         android:background="@drawable/border"
         android:paddingLeft="3dp"
-        android:paddingTop="8dp"
         android:paddingRight="3dp"
-        android:paddingBottom="8dp"
+        android:verticalScrollbarPosition="defaultPosition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -80,56 +79,153 @@
             android:id="@+id/ContainerToken1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
 
             <ImageView
-                android:id="@+id/ficha1cont1"
+                android:id="@+id/ficha1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha1" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/ficha2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha2" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/ficha3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha3" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/ficha4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha4" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/ficha5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha5" />
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/ficha6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha6" />
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/ficha7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha7" />
+
+            <ImageView
+                android:id="@+id/ficha8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha8" />
+
+            <ImageView
+                android:id="@+id/ficha9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha9" />
+
+            <ImageView
+                android:id="@+id/ficha10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha10" />
+
+            <ImageView
+                android:id="@+id/ficha11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha11" />
+
+            <ImageView
+                android:id="@+id/ficha12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha12" />
+
+            <ImageView
+                android:id="@+id/ficha13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha13" />
+
+            <ImageView
+                android:id="@+id/ficha14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha14" />
+
+            <ImageView
+                android:id="@+id/ficha15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha15" />
+
+            <ImageView
+                android:id="@+id/ficha16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha16" />
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -157,9 +253,7 @@
         android:layout_marginEnd="75dp"
         android:background="@drawable/border"
         android:paddingLeft="3dp"
-        android:paddingTop="8dp"
         android:paddingRight="3dp"
-        android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -168,56 +262,153 @@
             android:id="@+id/ContainerToken2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
 
             <ImageView
                 android:id="@+id/ficha1cont2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha1" />
 
             <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha2cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha2" />
 
             <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha3cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha3" />
 
             <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha4cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha4" />
 
             <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha5cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha5" />
 
             <ImageView
-                android:id="@+id/imageView17"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha6cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha6" />
 
             <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha7cont2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha7" />
+
+            <ImageView
+                android:id="@+id/ficha8cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha8" />
+
+            <ImageView
+                android:id="@+id/ficha9cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha9" />
+
+            <ImageView
+                android:id="@+id/ficha10cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha10" />
+
+            <ImageView
+                android:id="@+id/ficha11cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha11" />
+
+            <ImageView
+                android:id="@+id/ficha12cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha12" />
+
+            <ImageView
+                android:id="@+id/ficha13cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha13" />
+
+            <ImageView
+                android:id="@+id/ficha14cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha14" />
+
+            <ImageView
+                android:id="@+id/ficha15cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha15" />
+
+            <ImageView
+                android:id="@+id/ficha16cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha16" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -243,6 +434,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="75dp"
         android:background="@drawable/border"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8">
@@ -252,59 +445,152 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:paddingLeft="3dp"
-            android:paddingTop="8dp"
-            android:paddingRight="3dp"
-            android:paddingBottom="8dp">
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
 
             <ImageView
                 android:id="@+id/ficha1cont3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha1" />
 
             <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha2cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha2" />
 
             <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha3cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha3" />
 
             <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha4cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha4" />
 
             <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha5cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha5" />
 
             <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha6cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha6" />
 
             <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="match_parent"
+                android:id="@+id/ficha7cont3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
                 app:srcCompat="@drawable/ficha7" />
+
+            <ImageView
+                android:id="@+id/ficha8cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha8" />
+
+            <ImageView
+                android:id="@+id/ficha9cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha9" />
+
+            <ImageView
+                android:id="@+id/ficha10cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha10" />
+
+            <ImageView
+                android:id="@+id/ficha11cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha11" />
+
+            <ImageView
+                android:id="@+id/ficha12cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha12" />
+
+            <ImageView
+                android:id="@+id/ficha13cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha13" />
+
+            <ImageView
+                android:id="@+id/ficha14cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha14" />
+
+            <ImageView
+                android:id="@+id/ficha15cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha15" />
+
+            <ImageView
+                android:id="@+id/ficha16cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:srcCompat="@drawable/ficha16" />
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -329,7 +615,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/flechader1"
         android:layout_width="26dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
@@ -341,7 +627,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/flechader2"
         android:layout_width="26dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
@@ -354,7 +640,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/flechader3"
         android:layout_width="26dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
